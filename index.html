@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Dummy Data To-do List</title>
 </head>
 <body>
     <div class="content">
-        <button onclick="fetchTodos()">Fetch Todos</button>
-        <button onclick="logTodos()">Log Todos</button>
-        <button onclick="populateTodos()">Populate Todos</button>
+        <div class="buttons">
+            <button class="btn" onclick="fetchTodos()">Fetch Todos</button>
+            <button class="btn" onclick="logTodos()">Log Todos</button>
+            <button class="btn" onclick="populateTodos()">Populate Todos</button>
+            </div>
         <ol id="todo-list">
         </ol> 
     </div>
