@@ -14,9 +14,14 @@ console.log(list)
   }
 
   const populateTodos = () => {
-    for (let i = 0; i <= arrayOfTodos.length; i++){
+    for (let i = 0; i < arrayOfTodos.length; i++){
     const element = document.createElement("li");
     element.appendChild(document.createTextNode(arrayOfTodos[i].title));
-    list.appendChild(element);
+    if(arrayOfTodos[i].completed == false){
+      element.classList.add("redColor");
+    }else{
+      element.classList.add("purpleColor");
+    }
+    list.appendChild(element)
   }  
 }
