@@ -25,4 +25,17 @@ console.log(list)
     list.appendChild(element)
   }  
 }
+const todosById = () =>{
+    for (let i = 0; i < arrayOfTodos.length; i++){
+    const filteredElement = document.createElement("li");
+    filteredElement.appendChild(document.createTextNode(arrayOfTodos[i].filter(array => array.userId).title));
+  }
+  console.log
+  list.appendChild(filteredElement)
+}
+const completedTodos = () =>{
 
+}
+const incompletedTodos = () => {
+
+}
