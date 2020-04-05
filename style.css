@@ -9,6 +9,7 @@
     height: 200px;
     justify-content: space-evenly;
     align-items: center;
+    margin-top:  20px;
 }
 #todo-list{
     display: flex;
@@ -31,4 +32,11 @@
 }
 .purpleColor{
     color: rgb(182, 182, 206);
+}
+#user-id{
+    width: 30px;
+    border: 2px, solid, aqua;
+}
+#lab{
+    margin-top: 5px;
 }
